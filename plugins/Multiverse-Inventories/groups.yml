@@ -5,6 +5,8 @@
 groups:
   default:
     worlds:
-    - biome bundle o plenty
+    - world
+    - spawn
+    - ASkyBlock
     shares:
     - all

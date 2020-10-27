@@ -53,7 +53,7 @@ island:
    #How many resets a player is allowed (override with /asadmin clearreset <player>
    #Value of -1 means unlimited, 0 means hardcore - no resets.
    #Example, 2 resets means they get 2 resets or 3 islands lifetime
-   resetlimit: 2
+   resetlimit: 0
 
    #How long a player must wait before they can reset their island again in second
    resetwait: 300
@@ -105,13 +105,12 @@ island:
    # Check console for errors and guidance after reloading configuration
    # Schematics can override this - see schematicsection
 
-   chestItems: 'ICE:2 MELON:1 TORCH:2 BONE:1 LAVA_BUCKET:1 PUMPKIN_SEEDS:1 SUGAR_CANE:1 RED_MUSHROOM:1 BROWN_MUSHROOM:1 CACTUS:1 BREAD:1 WHEAT:1 LEATHER_BOOTS:1 LEATHER_HELMET:1 LEATHER_CHESTPLATE:1 LEATHER_LEGGINGS:1'
-
+   chestItems: ''
    # Default island companion. Set schematic-specific companions in the schematicsection
    # Recommended are: COW, PIG, SHEEP, CHICKEN, VILLAGER, HORSE, IRON_GOLEM, OCELOT,
    # RABBIT, WOLF, LLAMA or NOTHING. Default is COW.
 
-   companion: COW
+   companion: NOTHING
 
    # Default list of names, picked at random that will apply to the companion
    # You can add more if you like. If none are listed, the companion will not be
@@ -143,11 +142,11 @@ island:
    
    # System settings - these cannot be changed by players, only viewed
    # Allow Enderman Griefing (default is to allow, see next setting)
-   allowendermangriefing: true
+   allowendermangriefing: false
    # Make enderman drop the block he is holding if he dies (recommended)
    endermandeathdrop: true
    # Allow creeper explosion damage to block (explosion still hurts)
-   allowcreeperdamage: true
+   allowcreeperdamage: false
    # Allow visitors to use creeper explosions to grief islands
    allowcreepergriefing: false 
    # Allow TNT damage to blocks (stops players using TNT to destroy other's islands)
@@ -159,7 +158,7 @@ island:
    # Allow visitors to keep their items if they die
    allowvisitorkeepinvondeath: false
    # Allow pistons to push outside of the protected area (maybe to make bridges)
-   allowpistonpush: true
+   allowpistonpush: false
    # Allow mob projectiles to damage item frames (skeleton arrows, shulker shots)
    allowitemframedamage: false
 
@@ -176,7 +175,7 @@ general:
    # Check for updates - this will tell Ops and the console if there is a new
    # version available. It contacts dev.bukkit.org to request the latest version
    # info. It does not download the latest version or change any files
-   checkupdates: true
+   checkupdates: false
    
    # ASkyBlock uses commands for some of its fonctionnalities (action bar, titles).
    # It used to silence them automatically by executing "/minecraft:gamerule sendCommandFeedback false",
@@ -185,7 +184,7 @@ general:
    
    # Show enter/exit notices in Action Bar (11.1+)
    # Only shows if notices are enabled in settings
-   showinactionbar: true
+   showinactionbar: false
    
    # Maximum number of islands. Set to 0 for unlimited. 
    # If the number of islands is greater than this number, no new islands will be
@@ -204,10 +203,10 @@ general:
    # Note: Some challenges will not be possible if there is no nether.
    # Note that with a standard nether all players arrive at the same portal and entering a
    # portal will return them back to their islands.
-   createnether: true
+   createnether: false
 
    # New island-style nether. Change to false for standard nether
-   newnether: true
+   newnether: false
    # Nether trees are made if a player grows a tree in the nether (gravel and glowstone)
    nethertrees: true  
    # Make the new nether roof, if false, there is nothing up there
@@ -337,7 +336,7 @@ general:
    loginremovemobs: true
 
    # Remove mobs when /island.
-   islandremovemobs: false
+   islandremovemobs: true
    
    # Mob white list - these mobs will NOT be removed when logging in or doing /island
    mobwhitelist:
@@ -370,7 +369,7 @@ general:
 
    # Villager limit - this is per team player, so an island of 4 will have 4x this number
    # Note that 10 villagers minimum are required to create an iron farm. Zero is unlimited.
-   villagerlimit: 10
+   villagerlimit: 1
       
    # General entity limiting
    # Use this section to limit how many entities can be added to an island.
@@ -470,7 +469,7 @@ general:
 
    # Starting money - this is how much money new players will have as their
    # balance at the start of an island. 
-   startingmoney: 10.00
+   startingmoney: 0
 
    # Reset Challenges - if this is true, player's challenges will reset when they
    # reset an island or if they are kicked or leave a team. Prevents exploiting the
@@ -481,7 +480,7 @@ general:
    # or restart and island. Default is true.
    # Note: if you have MultiInv running or a similar inventory control plugin, that
    # plugin may still reset the inventory when the world changes.
-   resetinventory: true
+   resetinventory: false
 
    # Allow kicked players to keep their inventory.
    # If false, kicked player's inventory will be thrown at the island leader if the
@@ -516,10 +515,10 @@ general:
 
    # Broadcast 1st time challenge completion messages to all players.
    # Change to false if the spam becomes too much.
-   broadcastmessages: true
+   broadcastmessages: false
 
    # Remove non-repeatable challenges from the challenge GUI when complete
-   removecompleteonetimechallenges: false
+   removecompleteonetimechallenges: true
 
    # Add enchanted glow to completed challenges
    addcompletedglow: true
@@ -543,7 +542,7 @@ general:
    # This enables player to set is so their chat goes to their team mates only
    # using the /island teamchat command.
    # The prefix [Team Chat] that goes in front of team chats is in the locale files
-   teamchat: true
+   teamchat: false
 
    # Set this to true will log all messages sent in TeamChats to console
    # If set to false, it won't be logged.
@@ -570,14 +569,14 @@ general:
    # Warp Restriction - needed levels to be able to create a warp
    # 0 or negative values will disable this restriction
    # 10 is default
-   warplevelrestriction: 10
+   warplevelrestriction: 100000
    
    # Warp panel - GUI for welcome warp signs. If set to false, old-style
    # text will be used
-   usewarppanel: true
+   usewarppanel: false
    
    # Mute death messages
-   mutedeathmessages: false
+   mutedeathmessages: true
    
    # How often the grid will be saved to file in mins. Default is 5 minutes.
    # This helps prevent issues if the server crashes. Grid is also saved at important
@@ -603,7 +602,7 @@ general:
    
    # Only allow the island leader to coop players.
    # Island members wont be able to coop other players.
-   onlyleadercancoop: false
+   onlyleadercancoop: true
 
    # Set whether or not players can reject coop requests.
    # If set to false players are just directly added as a coop player.
@@ -620,7 +619,7 @@ general:
    # This only works if there is a single block of obsidian (no obsidian within 10 blocks)
    # Recommendation is to keep this true so that newbies don't bother you or reset their
    # island unnecessarily.
-   allowobsidianscooping: true
+   allowobsidianscooping: false
    
    # By default, island top ten (/is top) is displayed as a GUI.
    # If this option is set to TRUE, the top ten will be displayed
@@ -664,7 +663,7 @@ general:
    # Disable redstone operation on islands unless a team member is online.
    # This may reduce lag but it can cause problems with visitors needing to use a redstone system.
    # Default is false
-   disableofflineredstone: false
+   disableofflineredstone: true
    
    # Disable piston pushing of TNT. There is a glitch in 1.9.4 that enables unlimited
    # TNT creation with this. Default is allowed, set to false if you need it off.
@@ -857,67 +856,10 @@ biomesettings:
 # remove ice/water/snow - will be done once when the biome is made
 
 biomes:
-  COLD_BEACH:
-    icon: SAPLING
-    friendlyname: "&bCold &eBeach"
-    description: "&bSnowy and cold.|&bBrrr."
-    # Perms can be any string you like!
-    #permission: any.perm.you.want
-  DESERT:
-    icon: DEAD_BUSH
-    friendlyname: "&eDesert"
-    description: "&eA dry desert.|&eWarning - Ice or|&esnow have to go."
-    #permission: any.perm.you.want
-  # Change MUTATED_FOREST to FLOWER_FOREST if you use an old server version
-  MUTATED_FOREST:
-    icon: RED_ROSE
-    friendlyname: "&aFlower Forest"
-    description: "Trees and flowers!"
-    #permission: any.perm.you.want
-  HELL:
-    icon: LAVA_BUCKET
-    cost: 1000
-    # Note, this permission can be anything you like
-    permission: askyblock.biomes.hell
-    friendlyname: "&cNether"
-    description: "&eWarning - all water,|&esnow and ice will|&ebe removed."
-  JUNGLE:
-    icon: VINE
-    friendlyname: "&2Jungle"
-    description: "&aLush jungle.|&aWarning - Ice or|&asnow have to go."
-    #permission: any.perm.you.want
-  MUSHROOM_ISLAND:
-    icon: RED_MUSHROOM
-    # Note, this permission can be anything you like
-    permission: askyblock.biomes.mushroom_island
-    friendlyname: "&cMushroom island"
-    description: "&cMushrooms"
   PLAINS:
     icon: GRASS
     description: Plain plains!
     cost: 0
-    #permission: any.perm.you.want
-  SWAMPLAND:
-    icon: WATER_LILY
-    friendlyname: "&eSwampland"
-    description: "&2Swampy.|&eWarning - Ice or|&esnow have to go."
-    #permission: any.perm.you.want
-  MESA:
-    icon: HARD_CLAY
-    friendlyname: "&eMesa"
-    description: "&4Rare dry, desert biome.|&4Warning - Ice or|&4snow have to go."
-    #permission: any.perm.you.want
-    cost: 500
-  SAVANNA:
-    icon: LONG_GRASS
-    friendlyname: "&eSavanna"
-    description: "&eFlat and dry, no rain.|&eWarning - Ice or|&esnow have to go."
-    #permission: any.perm.you.want
-  ROOFED_FOREST:
-    icon: LOG
-    friendlyname: "&l&eBlack Forest"
-    description: "&6Woods and trees"
-    #permission: any.perm.you.want
 
 
 schematicsection:
@@ -929,7 +871,7 @@ schematicsection:
    # the island selected is undefined - the plugin will pick one.
    # Permissions are taken from the below schematics section even if the GUI is
    # not used.
-  useschematicspanel: true
+  useschematicspanel: false
 
    # Random island, only apply when useschematicspanel is false - if set to false
    # the plugin will choose the first island it found with the user permissions
@@ -974,109 +916,10 @@ schematicsection:
       # Longer description. Use | for new lines. Color codes okay.
       description: "Challenging|starter|island!"
       # Filename of the schematic in the schematic folder
-      filename: island.schematic
+      filename: jpj.schematic
       # Use default chest if true, or use schematic chest contents if false
-      useDefaultChest: true
+      useDefaultChest: false
       # Which schematic will be used in the opposite world if newnether:true
       # If there is no partner, this island will be used
       partnerSchematic: nether
-      #Level handicap zeros the initial island level. 
-      levelHandicap: 3
-
-    # This is the default nether island - do not remove this section!
-    nether:
-      # Hide or show this schematic to players in the GUI
-      show: false
-      icon: NETHERRACK
-      # If the biome is HELL it is assumed this island goes in the Nether
-      biome: HELL
-      name: "NetherBlock Island"
-      description: "An island in the nether|overlooked by a mob tower"
-      filename: nether.schematic
-      # Nether schematics should generally use the schematic chest contents
-      useDefaultChest: false
-      # The partner to this schematic is the default island
-      partnerSchematic: default
-      # Schematics can include entities (mobs) in them and if pasteentities is true,
-      # mobs will be pasted. 
-      pasteentities: true
-      # Usephysics causes lava or water to flow after being pasted. Change to false
-      # if it lags
-      usephysics: true
-      #Level handicap zeros the initial island level. 
-      levelHandicap: 93
-  
-    # Additional heading names can be anything you like, but must be unique
-    island1:
-      # Credit to Antal1609 for this schematic!
-      icon: RED_ROSE
-      order: 2
-      name: "Island Duo"
-      description: "Two close islands!|Double the fun,|but a little easier.|&a[Credit] Antal1609"
-      filename: double.schematic
-      # Schematics can have biomes set when they are created
-      biome: FOREST
-      # If useDefaultChest is false, the items in the schematic will be used
-      # If false, the default chest items will be used, or the list below
-      useDefaultChest: true
-      # Chest items defined here will override the default chest items.
-      # You can set the chest items here in this list
-      # Material:Qty, or Material:Data:Qty
-      #chestItems:
-      #- MELON:1
-      #- ICE:1
-      # Your island companion. Overrides the default setting. If more than one is
-      # listed, one will be chosen at random.
-      # Recommended choices: COW, PIG, SHEEP, CHICKEN, VILLAGER, HORSE, IRON_GOLEM, OCELOT,
-      # RABBIT, WOLF, LLAMA or NOTHING.
-      companion:
-      - CHICKEN 
-      # This is a list of names, picked at random that will apply to the companion
-      # You can add more if you like. If none are listed, the companion will not be
-      # named.
-      companionnames:
-      - "&9[player]'s chicken"
-      - "&dFree-Range Eggs"
-      partnerSchematic: nether
-      #permission: any.perm.you.like
-      #Level handicap zeros the initial island level. 
-      levelHandicap: 9
-      # Cost - if an economy is in use, this can be used to require a fee
-      # Only works with the schematic panel
-      # The cost is a double and displayed in the description if [cost] is there
-      cost: 0
-
-    # New snowy schematic
-    extrahard:
-      icon: OBSIDIAN
-      order: 3
-      # Ski theme - a black diamond run is hard.
-      name: "&lBlack &bDiamonds"
-      description: "Experts only!|&aMinimal resources|&awith a few diamonds."
-      filename: harder.schematic
-      biome: COLD_BEACH
-      useDefaultChest: false
-      # Chest items defined here will override the default chest items.
-      # You can set the chest items here in this list
-      # Material:Qty, or Material:Data:Qty
-      #chestItems:
-      #- MELON:1
-      #- ICE:1
-      # Schematics that require water or lava to hover can prevent physics when pasting
-      usephysics: false
-      # Schematics may include entities (mobs) in them and if pasteentities is true,
-      # mobs will be pasted.
-      # Example: Setting this to true for this schematic will give a wolf.
-      pasteentities: false
-      partnerSchematic: nether
-      #permission: any.perm.you.like
-      # This optional block determines where the player will spawn. It must be unique in
-      # the schematic and will be replaced by air when pasted.
-      #spawnblock: SPONGE
-      #Level handicap zeros the initial island level. 
-      levelHandicap: 1
-      # Cost - if an economy is in use, this can be used to require a fee
-      # Only works with the schematic panel
-      # The cost is a double and displayed in the description if [cost] is there
-      cost: 0
-
+      levelHandicap: 0
