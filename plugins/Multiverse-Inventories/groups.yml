@@ -6,7 +6,6 @@ groups:
   default:
     worlds:
     - world
-    - spawn
     - ASkyBlock
     shares:
     - all

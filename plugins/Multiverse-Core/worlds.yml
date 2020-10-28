@@ -2,7 +2,7 @@ worlds:
   world:
     ==: MVWorld
     hidden: 'false'
-    alias: ''
+    alias: Spawn
     color: WHITE
     style: NORMAL
     pvp: 'true'
@@ -27,72 +27,25 @@ worlds:
       amount: '0.0'
     hunger: 'true'
     autoHeal: 'true'
-    adjustSpawn: 'true'
+    adjustSpawn: 'false'
     portalForm: ALL
     gameMode: SURVIVAL
     keepSpawnInMemory: 'true'
     spawnLocation:
       ==: MVSpawnLocation
-      x: -211.5
-      y: 68.0
-      z: 248.5
-      pitch: 0.0
-      yaw: 0.0
+      x: 0.5
+      y: 65.0
+      z: 0.5
+      pitch: 7.9500012
+      yaw: -271.1998
     autoLoad: 'true'
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NORMAL
-    seed: '1720837365662647471'
-    generator: 'null'
-    playerLimit: '-1'
-    allowFlight: 'true'
-  spawn:
-    ==: MVWorld
-    hidden: 'false'
-    alias: Spawn
-    color: WHITE
-    style: NORMAL
-    pvp: 'false'
-    scale: '1.0'
-    respawnWorld: spawn
-    allowWeather: 'false'
-    difficulty: EASY
-    spawning:
-      ==: MVSpawnSettings
-      animals:
-        ==: MVSpawnSubSettings
-        spawn: 'true'
-        spawnrate: '-1'
-        exceptions: []
-      monsters:
-        ==: MVSpawnSubSettings
-        spawn: 'true'
-        spawnrate: '-1'
-        exceptions: []
-    entryfee:
-      ==: MVEntryFee
-      amount: '0.0'
-    hunger: 'false'
-    autoHeal: 'true'
-    adjustSpawn: 'true'
-    portalForm: ALL
-    gameMode: SURVIVAL
-    keepSpawnInMemory: 'true'
-    spawnLocation:
-      ==: MVSpawnLocation
-      x: 0.0
-      y: 66.0
-      z: 0.0
-      pitch: 0.0
-      yaw: 0.0
-    autoLoad: 'true'
-    bedRespawn: 'false'
-    worldBlacklist: []
-    environment: NORMAL
-    seed: '-1952604658661575813'
+    seed: '-1189285748093866987'
     generator: VoidGenerator
     playerLimit: '-1'
-    allowFlight: 'false'
+    allowFlight: 'true'
   ASkyBlock:
     ==: MVWorld
     hidden: 'false'
@@ -136,7 +89,7 @@ worlds:
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NORMAL
-    seed: '574869573066431181'
+    seed: '3236828222974947074'
     generator: ASkyBlock
     playerLimit: '-1'
     allowFlight: 'false'

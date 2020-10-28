@@ -23,7 +23,7 @@ island:
    # IF YOU ARE UPGRADING YOU MUST USE YOUR OLD VALUE EXACTLY, E.G., 110
    # OR RESET YOUR WORLD
    # Value must be an even number
-   distance: 200
+   distance: 400
 
    # Default protection range (even number). Min = 0, Recommended = 100
    # Larger values will take longer to calculate the island level
@@ -53,7 +53,7 @@ island:
    #How many resets a player is allowed (override with /asadmin clearreset <player>
    #Value of -1 means unlimited, 0 means hardcore - no resets.
    #Example, 2 resets means they get 2 resets or 3 islands lifetime
-   resetlimit: 0
+   resetlimit: 1
 
    #How long a player must wait before they can reset their island again in second
    resetwait: 300
@@ -117,9 +117,7 @@ island:
    # named.
    # Set schematic-specific companion names in the schematicsection
    companionnames:
-   - "&9[player]'s cow"
    - "&cEmergency &fFood?"
-   - "&aD&6a&di&6s&9y"
    
    # Island naming
    # Only players with the askyblock.island.name permission can name their island
