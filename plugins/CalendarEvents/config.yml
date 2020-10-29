@@ -1,0 +1,38 @@
+# ---------------------------------------------------------------------------- #
+#                                                                              #
+#                          Calender Events config                              #
+#                                                                              #
+# ---------------------------------------------------------------------------- #
+
+events:
+  # Event called every working/school day, every two hours
+  resetOnFriday:
+    timing:
+      occasion: "thursday, friday"
+      time: "17:00"
+
+# General Calendar Events settings
+settings:
+  # If your server is in a different timezone then most of your players, you can add hours to the server time here.
+  addHoursToServerTime: 0
+  language: "en"
+
+# You can listen to calendar events in other plugins.
+# But you can also use the listener in this plugin for basic actions.
+# For example: send commands, messages, broadcasts, titles
+# use & for colors
+# %time% will be replaced with the events time (24h format hh:mm)
+# %day% will be replaced with the name of the day in the locale defined at 'settings.locale'
+# %month% will be replaced with the name of the month in the locale defined at 'settings.locale'
+listener:
+  resetOnFriday:
+    # %allOnline%    --->  this gets called for every online player and will be replaced with the player name
+    # %allOffline%   --->  this gets called for every offline player and will be replaced with the player name
+    # %allPlayers%   --->  this gets called for every player (online and offline) and will be replaced with the player name
+    commands:
+      - "resetworld"
+
+# CalendarEvents is on bStats: https://bstats.org/plugin/bukkit/CalendarEvents
+# If you don't want any anonymous data to be send, you can opt it out here.
+bstats:
+  disabled: false

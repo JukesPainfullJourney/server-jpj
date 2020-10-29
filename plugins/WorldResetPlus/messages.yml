@@ -1,0 +1,88 @@
+prefix: '&7[&6WorldReset&7]'
+reset:
+  kickMessage: '&cYou have been kicked, so that the world, you were playing on, can
+    be resetted.'
+  teleport: '%prefix% You have been teleported, so that the world, you were playing
+    on, can be resetted.'
+  teleportBack: '%prefix% &aReset complete! You will be teleported to your last location.'
+commands:
+  unknown: '%prefix% This command is unknown. Type &6/%cmd% help &7for help.'
+  noPermission: '%prefix% &cYou don''t have permissions to use this command.'
+  playersOnly: '[WorldReset] This command can only be performed as a player.'
+  help:
+    heading: '%prefix% Available commands:'
+    save: '&6/%cmd% save [WorldName] &7- Save a world, so you can reset it later'
+    reset: '&6/%cmd% reset [WorldName] &7- Reset a world, which have been saved before'
+    regenerate: '&6/%cmd% regenerate [WorldName] (Option:Value)... &7- Regenerates
+      a world'
+    deleteSave: '&6/%cmd% deleteSave [WorldName] &7- Delete the save of a world'
+    schedule: '&6/%cmd% schedule [WorldName] [Cron-Expression] &7- Setup a scheduler
+      for a world'
+    removeScheduler: '&6/%cmd% removeScheduler [WorldName] &7- Removes the scheduler
+      of a world'
+    setTeleport: '&6/%cmd% setTeleport &7- From now on, players will be teleported
+      to your current position instead of getting kicked (This can be set back inside
+      the config)'
+  save:
+    noWorldCalled: '%prefix% Please call the world to be saved.'
+    worldDoesntExists: '%prefix% The provided world doesn''t exists.'
+    mainWorld: '%prefix% This world can''t be saved, because it is or belongs to the
+      main world.'
+    worldSaved: '%prefix% The world &6%world% &7has been saved.'
+  deleteSave:
+    noWorldCalled: '%prefix% Please call the world to be deleted.'
+    notSavedBefore: '%prefix% The world haven''t been saved before.'
+    worldDeleted: '%prefix% The save of the world &6%world% &7has been deleted.'
+  reset:
+    noWorldCalled: '%prefix% Please call the world to be resetted.'
+    notSavedBefore: '%prefix% The world hasn''t been saved before.'
+    worldIsNotLoaded: '%prefix% The world is not loaded on the server.'
+    mainWorld: '%prefix% This world can''t be resetted, because it is or belongs to
+      the main world.'
+    worldResetted: '%prefix% The world &6%world% &7has been resetted.'
+  regenerate:
+    noWorldCalled: '%prefix% Please call the world to be regenerated.'
+    worldIsNotLoaded: '%prefix% The world is not loaded on the server.'
+    mainWorld: '%prefix% This world can''t be regenerated, because it is or belongs
+      to the main world.'
+    settingsFormat: '%prefix% Cannot interpret &6%wrong_format%&7, the format has
+      to be: &6option1:value1 option2:value2 &7etc.'
+    unknownOption: '%prefix% The option &6%option% &7was not found.'
+    invalidValueForOption: '%prefix% &6%value% &7is not a valid value for the option
+      &6%option%'
+    worldRegenerated: '%prefix% The world &6%world% &7has been regenerated.'
+  schedule:
+    noWorldCalled: '%prefix% Please call the world of which a scheduler should be
+      created.'
+    noCronExpressionCalled: '%prefix% Please call the cron expression for the schedule.
+      If you don''t know what it is, read more at the resource page of this plugin.'
+    notSavedBefore: '%prefix% The world haven''t been saved before.'
+    mainWorld: '%prefix% A scheduler for this world can''t be created, because it
+      is or belongs to the main world.'
+    expressionNotValid: '%prefix% The cron expression is not valid. If you don''t
+      know how to use it, read more at the resource page of this plugin.'
+    schedulerSaved: '%prefix% The scheduler for &6%world% &7has been saved.'
+  removeScheduler:
+    noWorldCalled: '%prefix% Please call the world of the scheduler.'
+    noSchedulerSaved: '%prefix% No scheduler has been saved for this world.'
+    schedulerRemoved: '%prefix% The scheduler has been removed.'
+  setTeleport:
+    locationSet: '%prefix% The teleport location has been set and the players will
+      now be teleported to this location and back after finish instead of getting
+      kicked (This can be set back inside the config)'
+update:
+  ingame: '%prefix% An update is available at: %link%'
+  console: '[WorldReset] An update is available at: %link%'
+api:
+  reset:
+    mainWorld: '[WorldReset-API] This world can''t be reset, because it is or belongs
+      to the main world.'
+  regenerate:
+    mainWorld: '[WorldReset-API] This world can''t be regenerated, because it is or
+      belongs to the main world.'
+  scheduler:
+    invalidExpression: '[WorldReset-API] A plugin wanted to use a invalid Cron expression.'
+    worldNotSaved: '[WorldReset-API] A scheduled reset of %world% can''t be done,
+      because the world was not saved before.'
+    worldNotLoaded: '[WorldReset-API] A scheduled reset of %world% can''t be done,
+      because the world is not loaded.'

@@ -6,6 +6,11 @@ teamLeader: ''
 teamIslandLocation: ''
 islandLevel: 0
 members: []
+resetsLeft: 1
+deaths: 0
+locale: ''
+startIslandRating: 50
+useControlPanel: false
 challenges:
   status:
     expert: false
@@ -124,8 +129,3 @@ challenges:
     farmer: 0
     angler: 0
     treecutter: 0
-resetsLeft: 1
-deaths: 0
-locale: ''
-startIslandRating: 50
-useControlPanel: false

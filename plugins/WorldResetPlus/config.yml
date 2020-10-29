@@ -1,0 +1,13 @@
+#  
+#  You can use our config generator at https://plugindevs.net/config?pl=worldresetplus
+#  
+
+general:
+  useMultiverse: true
+reset:
+  handlePlayers: KICK
+  teleportation:
+    location: not_set
+updater:
+  checkForUpdates: true
+  notifyOnJoin: true

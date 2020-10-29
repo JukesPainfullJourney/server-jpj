@@ -1,0 +1,15 @@
+createworld:
+  command: /createworld
+  type: RUN_CONSOLE
+  runcmd:
+    - mv create Biome_Bundle_O_Plenty normal
+    #-g OpenTerrainGenerator
+  delaytimer: 2
+
+resetworld:
+  command: /resetworld
+  type: RUN_COMMAND
+  runcmd:
+    - /wr regen Biome_Bundle_O_Plenty seed:new
+  delaytimer: 2
+  register: true
