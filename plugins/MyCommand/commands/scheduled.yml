@@ -1,4 +1,4 @@
-createworld:
+createWorld:
   command: /createworld
   type: RUN_CONSOLE
   runcmd:
@@ -6,10 +6,28 @@ createworld:
     #-g OpenTerrainGenerator
   delaytimer: 2
 
-resetworld:
-  command: /resetworld
+resetWorld:
+  command: /resetWorld
   type: RUN_COMMAND
   runcmd:
     - /wr regen Biome_Bundle_O_Plenty seed:new
   delaytimer: 2
+  register: true
+
+resetWorldAlert:
+  command: /resetWorldAlert
+  type: RUN_CONSOLE
+  runcmd:
+    - "/tm abc -world=Biome_Bundle_O_Plenty &4⚠ This world will be regenerated in : &l${count_down:60} &r&4⚠"
+    - "/tm bc -world=Biome_Bundle_O_Plenty -stay=160 &4World regeneration at 18:00!<nl>&rDo &l/spawn &rsoon to quit safely."
+  register: true
+
+resetWorldAlertServer:
+  command: /resetWorldAlertServer
+  type: RUN_CONSOLE
+  runcmd:
+    - "/tm bc -world=Biome_Bundle_O_Plenty -stay=160 &4World regeneration at 18:00!<nl>&rDo &l/spawn &rsoon to quit safely."
+    - "/tm bc -world=world -stay=160 &4World regeneration at 18:00!<nl>&rDon't go in this world before regeneration."
+    - "/tm bc -world=ASkyBlock -stay=160 &4World regeneration at 18:00!<nl>&rDon't go in this world before regeneration."
+    - "/broadcast JPJ world regeneration at 18:00!\nPlease don't be in this world while regeneration. Use /spawn to go back to spawn as soon as you can.\nDuring regeneration, you will be kick and you may loose your inventory."
   register: true

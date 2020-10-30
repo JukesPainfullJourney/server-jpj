@@ -5,11 +5,18 @@
 # ---------------------------------------------------------------------------- #
 
 events:
-  # Event called every working/school day, every two hours
+  resetOnFridayAlertMessageServer:
+    timing:
+      occasion: "friday"
+      time: "17:50"
+  resetOnFridayAlertMessageWorld:
+    timing:
+      occasion: "friday"
+      time: "17:59"
   resetOnFriday:
     timing:
-      occasion: "thursday, friday"
-      time: "17:00"
+      occasion: "friday"
+      time: "18:00"
 
 # General Calendar Events settings
 settings:
@@ -25,12 +32,15 @@ settings:
 # %day% will be replaced with the name of the day in the locale defined at 'settings.locale'
 # %month% will be replaced with the name of the month in the locale defined at 'settings.locale'
 listener:
-  resetOnFriday:
-    # %allOnline%    --->  this gets called for every online player and will be replaced with the player name
-    # %allOffline%   --->  this gets called for every offline player and will be replaced with the player name
-    # %allPlayers%   --->  this gets called for every player (online and offline) and will be replaced with the player name
+  resetOnFridayAlertMessageServer:
     commands:
-      - "resetworld"
+      - "resetWorldAlertServer"
+  - resetOnFridayAlertMessageWorld:
+    commands:
+      - "resetWorldAlert"
+  resetOnFriday:
+    commands:
+      - "resetWorld"
 
 # CalendarEvents is on bStats: https://bstats.org/plugin/bukkit/CalendarEvents
 # If you don't want any anonymous data to be send, you can opt it out here.
