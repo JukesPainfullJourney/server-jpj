@@ -1,0 +1,53 @@
+menu:
+  settings-name: '&5Shortcut Menu :'
+  settings-rows: 1
+  settings-open-commands: menu
+  settings-permission: superlobby.menu.jpj
+  settings-open-sound: BLOCK_NOTE_PLING
+  items:
+    spawn:
+      name: '&aGo back to &lSpawn'
+      lore:
+      - '&7Going back to the spawn of the server.'
+      - ''
+      - '&8> &n&6&lClick to go!'
+      - ''
+      - '&7Shortcut : &a/spawn'
+      id: 138
+      data-value: 0
+      slot: 3
+      commands:
+      - 'player: spawn'
+      permission: superlobby.spawn
+    jpj:
+      name: '&a&lJPJ &r&a: Survival Modded World'
+      lore:
+      - '&7Teleport to the modded PVP / PVE world.'
+      - '&7In this Hardcore world you can gather resources!'
+      - ''
+      - '&8> &n&6&lClick to go!'
+      - ''
+      - '&7Shortcut : &a/jpj'
+      id: 397
+      data-value: 3
+      skull: Titan
+      slot: 5
+      commands:
+      - 'player: jpj'
+      permission: superlobby.jpj
+    island:
+      name: '&a&lSkyBase'
+      lore:
+      - '&7Your personal SkyBase : might be the only safe place.'
+      - '&7Build your house and be ready to explore JPJ world!'
+      - ''
+      - '&8> &n&6&lClick to go !'
+      - ''
+      - '&7Shortcut : &a/island'
+      id: 397
+      data-value: 3
+      skull: greeg
+      slot: 7
+      commands:
+      - 'player: island'
+      permission: superlobby.island

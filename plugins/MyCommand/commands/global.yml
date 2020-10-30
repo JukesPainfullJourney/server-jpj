@@ -1,0 +1,14 @@
+createWorld:
+  command: /createworld
+  type: RUN_CONSOLE
+  runcmd:
+    - mv create Biome_Bundle_O_Plenty normal
+    #-g OpenTerrainGenerator
+  delaytimer: 2
+
+randomTpInSurvivalWorld:
+  command: /jpj
+  type: RUN_COMMAND
+  runcmd:
+    - /wild Biome_Bundle_O_Plenty
+  permission-node: jpj.wild

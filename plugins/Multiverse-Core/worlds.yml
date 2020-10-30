@@ -42,7 +42,7 @@ worlds:
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NORMAL
-    seed: '-2078380647361002392'
+    seed: '6722212374007593062'
     generator: VoidGenerator
     playerLimit: '-1'
     allowFlight: 'true'
@@ -89,7 +89,7 @@ worlds:
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NORMAL
-    seed: '-2443642595923714996'
+    seed: '3526920131390433415'
     generator: ASkyBlock
     playerLimit: '-1'
     allowFlight: 'false'
@@ -136,7 +136,7 @@ worlds:
     bedRespawn: 'true'
     worldBlacklist: []
     environment: NORMAL
-    seed: '-3210413094413531605'
+    seed: '2751537531585052074'
     generator: 'null'
     playerLimit: '-1'
     allowFlight: 'true'

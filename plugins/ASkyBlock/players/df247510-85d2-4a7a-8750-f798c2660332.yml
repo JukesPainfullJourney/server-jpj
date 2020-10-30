@@ -1,6 +1,6 @@
 playerName: JukeBoy_
-hasIsland: false
-islandLocation: ''
+hasIsland: true
+islandLocation: ASkyBlock:0:115:400:0:0
 hasTeam: false
 teamLeader: ''
 teamIslandLocation: ''
@@ -9,8 +9,9 @@ members: []
 resetsLeft: 1
 deaths: 0
 locale: ''
-startIslandRating: 50
 useControlPanel: false
+homeLocations:
+  '1': ASkyBlock:0:120:402:0:1106247680
 challenges:
   status:
     expert: false
@@ -129,3 +130,4 @@ challenges:
     farmer: 0
     angler: 0
     treecutter: 0
+islandInfo: 0:115:400:100:400:df247510-85d2-4a7a-8750-f798c2660332:false:false:11000000000001101010100011000101111000100000111:PLAINS:0

@@ -1,0 +1,99 @@
+Update-Check: true
+Prefix: '&6SuperLobby &e>> &7'
+Messages: EN
+Worlds:
+- world
+DisableRain: true
+DisableBlockBreak: true
+DisableBlockPlace: true
+DisableBlockBurn: true
+DisableDropItem: true
+DisableItemMove: false
+DisableItemDamage: true
+DisablePickUpItems: true
+DisableEntityExplode: true
+DisableDamage: true
+DisableHunger: true
+DisableDeathMessage: true
+ClearDropsOnDeath: false
+JoinClearInventory: false
+JoinClearChat: false
+JoinSpawn: false
+LobbyItems: false
+VoidTP: false
+AlwaysDay: true
+JoinBossBar:
+  Enable: false
+  Message: '&bWelcome to the official JPJ server!'
+  Color: BLUE
+  Style: NOTCHED_20
+  Time: 30
+JoinTab:
+  Enable: true
+  Header: |-
+    &7
+    &a&m--&2&m--&8&m--&r &aJuke's Painfull Journey &f&lOfficial Server &8&m--&2&m--&a&m--
+    &7
+  Footer: |-
+    &7
+    &7Owner: &7JukeBoy_
+    &7Need info ? &7Do /info
+    &7Tell your friends to join us!
+    &7
+JoinTitles:
+  Enable: false
+  FadeIn: 20
+  Stay: 50
+  FadeOut: 10
+  Title: '&6<player> &bWelcome to'
+  Subtitle: '&6&lYourserver'
+JoinMotd:
+  Enable: true
+  Message:
+  - '&a&m--------&r Juke''s Painfull Journey &f&lOfficial Server &a&m--------'
+  - ''
+  - '&7Welcome on our server! Enjoy your trip!'
+  - '&7Modded | PvP-PvE | Fantasy-RPG | Hardcore Survival | SkyBlock'
+  - '&a# &fFor more information about how to play do &b/info'
+  - '&a&m-----------------------------------------------------'
+JoinGameMode:
+  Enable: false
+  GameMode: survival
+BossBarAnnouncer:
+  Enable: false
+  Color: BLUE
+  Style: NOTCHED_20
+  Time: 50
+  interval: 200
+  Messages:
+  - '&7Message &b1'
+  - '&7Message &52'
+  - '&7Message &e3'
+CommandsBlacklist:
+  Enable: true
+  Bypass: superlobby.admin
+  List:
+  - p
+  - pl
+  - '?'
+  - help
+  - plugins
+  - bukkit:plugins
+  - bukkit:pl
+  - bukkit:?
+  - bukkit:help
+  - ver
+  - version
+  - gc
+  - bukkit:version
+  - bukkit:ver
+InfoCommands:
+  Enable: true
+CustomEvents:
+  Enable: true
+FrameProtect: true
+JoinActionBar:
+  Enable: false
+  Type: Animation
+  Messages:
+  - 0,&6W_

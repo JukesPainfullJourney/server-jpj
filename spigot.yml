@@ -11,29 +11,18 @@
 # Forums: http://www.spigotmc.org/
 
 config-version: 11
-commands:
-  log: true
-  spam-exclusions:
-  - /skill
-  replace-commands:
-  - setblock
-  - summon
-  - testforblock
-  - tellraw
-  silent-commandblock-console: false
-  tab-complete: 0
 settings:
+  bungeecord: false
+  save-user-cache-on-stop-only: false
+  sample-count: 12
+  player-shuffle: 0
+  user-cache-size: 1000
   late-bind: false
   filter-creative-items: true
   int-cache-limit: 1024
   moved-wrongly-threshold: 0.0625
   moved-too-quickly-multiplier: 10.0
   item-dirty-ticks: 20
-  bungeecord: false
-  save-user-cache-on-stop-only: false
-  sample-count: 12
-  player-shuffle: 0
-  user-cache-size: 1000
   timeout-time: 60
   restart-on-crash: true
   restart-script: ./start.sh
@@ -48,6 +37,17 @@ settings:
 stats:
   disable-saving: false
   forced-stats: {}
+commands:
+  tab-complete: 0
+  silent-commandblock-console: false
+  spam-exclusions:
+  - /skill
+  replace-commands:
+  - setblock
+  - summon
+  - testforblock
+  - tellraw
+  log: true
 advancements:
   disable-saving: false
   disabled:
@@ -107,11 +107,11 @@ world-settings:
       exp: 3.0
       item: 2.5
     item-despawn-rate: 6000
-    arrow-despawn-rate: 1200
-    hanging-tick-frequency: 100
     enable-zombie-pigmen-portal-spawns: true
+    arrow-despawn-rate: 1200
     wither-spawn-sound-radius: 0
     view-distance: 10
+    hanging-tick-frequency: 100
     zombie-aggressive-towards-villager: true
     nerf-spawner-mobs: false
     entity-tracking-range:

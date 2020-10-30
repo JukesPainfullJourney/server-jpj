@@ -1,0 +1,4 @@
+default:
+  permission: superlobby.default
+  join-message: '&a<player> &ejoined the server!'
+  quit-message: '&c<player> &eleave the server!'
