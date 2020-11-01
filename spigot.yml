@@ -12,21 +12,7 @@
 
 config-version: 11
 settings:
-  bungeecord: false
-  save-user-cache-on-stop-only: false
-  sample-count: 12
-  player-shuffle: 0
-  user-cache-size: 1000
-  late-bind: false
-  filter-creative-items: true
-  int-cache-limit: 1024
   moved-wrongly-threshold: 0.0625
-  moved-too-quickly-multiplier: 10.0
-  item-dirty-ticks: 20
-  timeout-time: 60
-  restart-on-crash: true
-  restart-script: ./start.sh
-  netty-threads: 4
   attribute:
     maxHealth:
       max: 2048.0
@@ -34,13 +20,24 @@ settings:
       max: 2048.0
     attackDamage:
       max: 2048.0
+  bungeecord: false
+  late-bind: false
+  filter-creative-items: true
+  int-cache-limit: 1024
+  moved-too-quickly-multiplier: 10.0
+  item-dirty-ticks: 20
+  timeout-time: 60
+  restart-on-crash: true
+  restart-script: ./start.sh
+  netty-threads: 4
+  save-user-cache-on-stop-only: false
+  sample-count: 12
+  player-shuffle: 0
+  user-cache-size: 1000
 stats:
   disable-saving: false
   forced-stats: {}
 commands:
-  tab-complete: 0
-  silent-commandblock-console: false
-  log: true
   spam-exclusions:
   - /skill
   replace-commands:
@@ -48,12 +45,15 @@ commands:
   - summon
   - testforblock
   - tellraw
+  log: true
+  tab-complete: 0
+  silent-commandblock-console: false
+messages:
+  restart: Server is restarting
 advancements:
   disable-saving: false
   disabled:
   - minecraft:story/disabled
-messages:
-  restart: Server is restarting
 world-settings:
   default:
     verbose: true
@@ -103,13 +103,13 @@ world-settings:
     max-growth-height:
       cactus: 3
       reeds: 3
-    hanging-tick-frequency: 100
     merge-radius:
       exp: 3.0
       item: 2.5
     item-despawn-rate: 6000
     arrow-despawn-rate: 1200
     enable-zombie-pigmen-portal-spawns: true
+    hanging-tick-frequency: 100
     wither-spawn-sound-radius: 0
     view-distance: 10
     zombie-aggressive-towards-villager: true

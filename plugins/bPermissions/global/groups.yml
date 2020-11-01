@@ -2,15 +2,17 @@ default: default
 groups:
   default:
     permissions:
-    - askyblock.island.go
-    - baskyblock.island.create
-    - askyblock.island.sethome
-    - askyblock.island.lock
-    - askyblock.island.expel
+    - askyblock.craft.enderchest
     - askyblock.island.ban
+    - askyblock.island.create
+    - askyblock.island.expel
+    - askyblock.island.go
+    - askyblock.island.lock
     - askyblock.island.name
+    - askyblock.island.sethome
     - askyblock.island.spawn
     - askyblock.team.*
+    - baskyblock.island.create
     - multiverse.access.biome_bundle_o_plenty
     - multiverse.access.world
     - mycommand.jpj.wild

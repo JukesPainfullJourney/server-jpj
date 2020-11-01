@@ -57,10 +57,10 @@
 challenges:
   # Challenge levels - list as many as you like. If a challenge's level is '' it can
   # be done anytime. You cannot name a challenge the same as a level.
-  levels: ''
+  levels: 'Novice Competent'
     
   # The number of undone tasks that can be left on a level before unlocking next level
-  waiveramount: 0
+  waiveramount: 1
   
   # Free levels - which levels above should be auto done when reached, therefore unlocking next level.
   # Example:
@@ -72,8 +72,53 @@ challenges:
   # This section determines what happens when a player unlocks a new level
   # The subname should correspond to the levels listed above
   # Note that there is no section for the first level as it is automatically unlocked
-  levelUnlock: []
+  levelUnlock:
+    Competent:
+      # What additional message to send player
+      message: 'Congratulations - you unlocked the &9Competent level!'
+      rewardDesc: 'A diamond!'
+      itemReward: 'DIAMOND:1'
+      moneyReward: 0
+      expReward: 0
+      # List permissions separated by spaces
+      permissionReward: ''
+      # Commands to run on this player. Use [player] for their name.
+      commands:
+      #- kit tools [player]
+      #- some other command
 
   # Challenge list
   # Challenge names must be in lowercase. Do not use the same name as a level!
-  challengeList: []
+  challengeList:
+    glassmaker:
+      friendlyname: 'Glass Maker'
+      description: 'Create 1 block of glass'
+      icon: GLASS
+      level: 'Novice'
+      type: inventory
+      requiredItems: 'GLASS:1'
+      # You can require the player has a certain amount of money for inventory challenges.
+      # Remember to mention it in the description!
+      # If takeItems is true, the money will be removed, so you may want to give it
+      # back in the reward.
+      #requiredMoney: 10
+      takeItems: true
+      itemReward: 'ICE:1'
+      rewardText: '1 block of ice'
+      #rewardcommands:
+      #- kit tools [player]
+      moneyReward: 10
+      expReward: 30
+      permissionReward: ''
+      repeatable: true
+      repeatItemReward: 'ICE:1'
+      repeatRewardText: '1 block of ice'
+      repeatMoneyReward: 5
+      repeatExpReward: 10
+      #repeatrewardcommands:
+      # Max times limits how many times a challenge can be done. Comment out to make unlimited
+      maxtimes: 2
+      # Allow this challenge to reset when the player resets their island
+      # Default is true. Set to false to keep this challenge completed.
+      # Admins can always reset challenges even if this is set to false.
+      resetallowed: true

@@ -1,0 +1,29 @@
+playerName: JukeBoy_
+hasIsland: true
+islandLocation: ASkyBlock:0:115:0:0:0
+hasTeam: false
+teamLeader: ''
+teamIslandLocation: ''
+islandLevel: 0
+members: []
+resetsLeft: 1
+deaths: 0
+locale: ''
+useControlPanel: false
+startIslandRating: 50
+homeLocations:
+  '1': ASkyBlock:0:120:2:0:1106247680
+challenges:
+  status:
+    competent: false
+    glassmaker: false
+    novice: false
+  times:
+    competent: 0
+    glassmaker: 0
+    novice: 0
+  timestamp:
+    competent: 0
+    glassmaker: 0
+    novice: 0
+islandInfo: 0:115:0:100:400:df247510-85d2-4a7a-8750-f798c2660332:false:false:11000000000001101010100011000101111000100000111:PLAINS:0
