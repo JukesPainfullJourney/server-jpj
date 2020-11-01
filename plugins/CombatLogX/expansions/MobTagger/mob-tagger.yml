@@ -13,4 +13,4 @@ mob-list:
 # Which spawn reasons prevent mobs from tagging players?
 # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/CreatureSpawnEvent.SpawnReason.html
 spawn-reason-list:
-  - SPAWNER
+  - OCELOT_BABY

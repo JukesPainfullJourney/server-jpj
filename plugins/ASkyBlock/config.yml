@@ -72,7 +72,7 @@ island:
    # Default max team size
    # Use this permission to set for specific user groups: askyblock.team.maxsize.<number> 
    # Permission size cannot be less than the default. 
-   maxteamsize: 4
+   maxteamsize: 3
    
    # Island level calculation cool down in seconds
    levelwait: 60
@@ -540,7 +540,7 @@ general:
    # This enables player to set is so their chat goes to their team mates only
    # using the /island teamchat command.
    # The prefix [Team Chat] that goes in front of team chats is in the locale files
-   teamchat: false
+   teamchat: true
 
    # Set this to true will log all messages sent in TeamChats to console
    # If set to false, it won't be logged.

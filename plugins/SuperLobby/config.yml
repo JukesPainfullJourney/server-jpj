@@ -13,7 +13,7 @@ DisableItemDamage: true
 DisablePickUpItems: true
 DisableEntityExplode: true
 DisableDamage: true
-DisableHunger: true
+DisableHunger: false
 DisableDeathMessage: true
 ClearDropsOnDeath: false
 JoinClearInventory: false
@@ -21,7 +21,7 @@ JoinClearChat: false
 JoinSpawn: false
 LobbyItems: false
 VoidTP: false
-AlwaysDay: true
+AlwaysDay: false
 JoinBossBar:
   Enable: false
   Message: '&bWelcome to the official JPJ server!'
@@ -54,6 +54,7 @@ JoinMotd:
   - ''
   - '&7Welcome on our server! Enjoy your trip!'
   - '&7Modded | PvP-PvE | Fantasy-RPG | Hardcore Survival | SkyBlock'
+  - ''
   - '&a# &fFor more information about how to play do &b/info'
   - '&a&m-----------------------------------------------------'
 JoinGameMode:
@@ -72,21 +73,7 @@ BossBarAnnouncer:
 CommandsBlacklist:
   Enable: true
   Bypass: superlobby.admin
-  List:
-  - p
-  - pl
-  - '?'
-  - help
-  - plugins
-  - bukkit:plugins
-  - bukkit:pl
-  - bukkit:?
-  - bukkit:help
-  - ver
-  - version
-  - gc
-  - bukkit:version
-  - bukkit:ver
+  List: []
 InfoCommands:
   Enable: true
 CustomEvents:

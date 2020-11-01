@@ -14,25 +14,25 @@ damage-type:
   suffocation: true
 
   # Fall Damage
-  fall: true
+  fall: false
 
   # Touching a fire block
-  fire: true
+  fire: false
 
   # Being on fire
-  fire-tick: true
+  fire-tick: false
 
   # Touching Lava
-  lava: true
+  lava: false
 
   # Drowning in water
-  drowning: true
+  drowning: false
 
   # Explosions from TNT or plugins (not creepers)
   block-explosion: true
 
   # Damage from not eating enough food
-  starvation: true
+  starvation: false
 
   # Leftover poison potion effect
   poison: true
@@ -41,7 +41,7 @@ damage-type:
   magic: true
 
   # Leftover wither potion effect
-  wither: true
+  wither: false
 
   # Anvil damage
   falling-block: true
@@ -50,10 +50,10 @@ damage-type:
   custom: true
 
   # Damage from using an elytra and hitting a wall/mountain/tree
-  fly-into-wall: true
+  fly-into-wall: false
 
   # Damage from magma blocks
-  hot-floor: true
+  hot-floor: false
 
   # Damage from being near too many entities at once
-  cramming: true
+  cramming: false

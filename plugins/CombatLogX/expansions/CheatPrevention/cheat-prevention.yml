@@ -12,7 +12,6 @@ message-cooldown: 10
 #   blocked-potion-list: []
 blocked-potion-list:
 - "INVISIBILITY"
-- "INCREASE_DAMAGE"
 
 # Set this to true to disable chat during combat
 # Set this to false to allow chat
@@ -38,7 +37,6 @@ teleportation:
   #
   # Tip: The 'PLUGIN' cause may be required here to fix issues with region protection plugins
   allowed-cause-list:
-    - "UNKNOWN"
     - "ENDER_PEARL"
     - "PLUGIN"
 
@@ -64,7 +62,7 @@ flight:
   # This may cause issues with some custom flight plugins so it is disabled by default
   #
   # Default: false
-  force-disable-flight: false
+  force-disable-flight: true
 
   # This option will prevent fall damage if a player lost their flight due to CombatLogX
   #
@@ -91,7 +89,7 @@ game-mode:
   # Set this to false if they should keep their tag
   #
   # Default: false
-  untag-on-change-game-mode: false
+  untag-on-change-game-mode: true
 
 command-blocker:
   # This is a list of commands that are blocked
@@ -99,16 +97,14 @@ command-blocker:
   # The allowed-commands list bypasses the blocked-commands list
   # Both lists use startsWith as a check
   blocked-commands:
-    - "/teleport"
-    - "/tpa"
+    - "/tp"
     - "/tpaccept"
-    - "/tpo"
-    - "/tpahere"
-    - "/fly"
     - "/gamemode"
-    - "//wand"
     - "/spawn"
     - "/home"
+    - "/menu"
+    - "/jpj"
+    - "/island"
 
   # This is a list of commands that are allowed
   # Use this list to allow sub commands or unblock a command that is blocked due to startsWith (e.g. block "/tp" but allow "/tpa")
@@ -125,20 +121,20 @@ inventories:
   # For some reason any open menu counts as an inventory (e.g. Chat, Pause Menu, etc...)
   #
   # Default: true
-  close-on-tag: true
+  close-on-tag: false
 
   # Set this to true to prevent players from opening inventories and menus during combat.
   # Set this to false to allow players to open inventories and menus
   #
   # Default: true
-  prevent-opening: true
+  prevent-opening: false
 
 blocks:
   # Set this to true to prevent players from breaking blocks during combat
   # Set this to false to allow players to break blocks
   #
   # Default: true
-  prevent-breaking: true
+  prevent-breaking: false
   
   # This is a list of blocks that should be prevented from breaking
   # Spigot Material List: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
@@ -152,7 +148,7 @@ blocks:
   # Set this to false to allow players to break blocks
   #
   # Default: true
-  prevent-placing: true
+  prevent-placing: false
   
   # This is a list of blocks that should be prevented from placing
   # Spigot Material List: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
@@ -173,7 +169,7 @@ items:
   # Set this to false to allow players to pick up items
   #
   # Default: true
-  prevent-item-pickup: true
+  prevent-item-pickup: false
 
   # Set this to true to prevent players from dropping items during combat
   # Set this to false to allow players to drop items

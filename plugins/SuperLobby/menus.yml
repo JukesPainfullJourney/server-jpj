@@ -19,6 +19,7 @@ menu:
       commands:
       - 'player: spawn'
       permission: superlobby.spawn
+      permission-to-view: superlobby.spawn
     jpj:
       name: '&a&lJPJ &r&a: Survival Modded World'
       lore:
@@ -35,6 +36,7 @@ menu:
       commands:
       - 'player: jpj'
       permission: superlobby.jpj
+      permission-to-view: superlobby.jpj
     island:
       name: '&a&lSkyBase'
       lore:
@@ -51,3 +53,4 @@ menu:
       commands:
       - 'player: island'
       permission: superlobby.island
+      permission-to-view: superlobby.island

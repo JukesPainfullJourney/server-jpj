@@ -1,0 +1,21 @@
+
+default: player
+
+groups:
+  player:
+    - ^bukkit.command.version
+  admin:
+
+#Setspawn
+No-Permission-Message: '&0[&fSetSpawn&0]&r: &4You are not permitted to do this!'
+
+permissions:
+  - askyblock.island.go
+  - baskyblock.island.create
+  - askyblock.island.sethome
+  - askyblock.island.lock
+  - askyblock.island.expel
+  - askyblock.island.ban
+  - askyblock.island.name
+  - askyblock.island.spawn
+  - askyblock.team.*

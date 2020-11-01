@@ -1,0 +1,36 @@
+default: default
+groups:
+  default:
+    permissions:
+    - askyblock.island.go
+    - baskyblock.island.create
+    - askyblock.island.sethome
+    - askyblock.island.lock
+    - askyblock.island.expel
+    - askyblock.island.ban
+    - askyblock.island.name
+    - askyblock.island.spawn
+    - askyblock.team.*
+    - multiverse.access.biome_bundle_o_plenty
+    - multiverse.access.world
+    - mycommand.jpj.wild
+    - randomteleport.presets.jpj
+    - rtp.tp
+    - rtp.world.biome_bundle_o_plenty
+    - spawn.spawn
+    - superlobby.island
+    - superlobby.jpj
+    - superlobby.menu.jpj
+    - superlobby.spawn
+    - wild.wildtp
+    - wild.wildtp.biome_bundle_o_plenty
+    - ^bukkit.command.help
+    - ^bukkit.command.plugins
+    - ^bukkit.command.version
+    - ^minecraft.command.me
+    groups: []
+  admin:
+    permissions:
+    - minecraft.command.op
+    groups:
+    - default

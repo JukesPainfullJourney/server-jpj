@@ -3,7 +3,7 @@
 # Set this to true if the boss bar should be enabled
 # The Boss Bar is a message and health bar shown at the top of the screen
 # If your version is below 1.9 and you don't have BossBarAPI installed, set this to false
-enabled: true
+enabled: false
 
 # These options only work in 1.9+
 bar-color: YELLOW

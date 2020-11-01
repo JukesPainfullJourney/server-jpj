@@ -8,7 +8,7 @@ createWorld:
 
 randomTpInSurvivalWorld:
   command: /jpj
-  type: RUN_COMMAND
+  type: RUN_CONSOLE
   runcmd:
-    - /wild Biome_Bundle_O_Plenty
-  permission-node: jpj.wild
+    - /rtp $player Biome_Bundle_O_Plenty
+  permission-node: mycommand.jpj.wild

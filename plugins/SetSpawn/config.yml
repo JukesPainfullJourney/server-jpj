@@ -20,7 +20,7 @@ Teleport-Message:
     
 #The message that a player receives when he moves during a teleport cooldown.
 Cancel-On-Move:
-    Enabled: true
+    Enabled: false
     Enable-Message: true
     Message: '&0[&fSetSpawn&0]&r: &4Teleportation cancelled!'
 

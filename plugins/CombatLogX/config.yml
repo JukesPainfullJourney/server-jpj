@@ -16,7 +16,7 @@ language: "en_us"
 # (Unknown or undetectable languages will use the language configured above)
 #
 # Default: true
-per-player-locale: true
+per-player-locale: false
 
 # Should extra messages be printed for certain tasks?
 # Only use this if you are having issues or you are asked to by SirBlobman
@@ -57,19 +57,14 @@ disabled-worlds:
 # Available Prefixes:
 # [PLAYER] - run the command as the player that was tagged
 # [OP] - run the command as the player that was tagged, but with "Server Operator" permissions (not recommended)
-combat-sudo-command-list:
-  - "tell {player} you are now in combat."
-  - "[PLAYER]say I am now in combat."
+combat-sudo-command-list: []
 
 # This is a list of commands that will be executed whenever a player is untagged
 # Commands will be run in console by default
 # Available Prefixes:
 # [PLAYER] - run the command as the player that was tagged
 # [OP] - run the command as the player that was tagged, but with "Server Operator" permissions (not recommended)
-untag-sudo-command-list:
-  - "tell {player} you are no longer in combat!"
-  - "[PLAYER]say I am no longer in combat."
-
+untag-sudo-command-list: []
 
 # Set this to true to link wolves, cats, parrots, and other pets to the entity that owns them.
 # This will only link the owner if the pet is the attacker
@@ -88,7 +83,7 @@ combat:
   # The timer is in seconds.
   #
   # Default: 15
-  timer: 15
+  timer: 20
 
   # What permission should be used to bypass combat tagging?
   # Set this to "" to disable the bypass permission.

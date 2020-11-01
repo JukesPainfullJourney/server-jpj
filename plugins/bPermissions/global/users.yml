@@ -1,0 +1,7 @@
+users:
+  df247510-85d2-4a7a-8750-f798c2660332:
+    username: JukeBoy_
+    permissions:
+    - minecraft.command.op
+    groups:
+    - default
